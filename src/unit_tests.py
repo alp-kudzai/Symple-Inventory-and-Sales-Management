@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Thu Feb  4 13:11:55 2021
@@ -7,7 +8,6 @@ Created on Thu Feb  4 13:11:55 2021
 from subclasses import *
 
 #TODO:add more test cases
-#TODO: add get_filename and change_filename()
 
 #Lets test every method in inventory class except load_inventory and save_inventory
 #start with objects in classes.py
