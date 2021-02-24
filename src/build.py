@@ -31,14 +31,15 @@ def main_gui_program():
                 'Set Raw Material', 'Set Stock', 'Sell Item/Service',
                 'Remove Raw Material', 'Remove Stock', 'Remove Sales Item/Service'
                 )
-    sg.theme('DarkAmber')
+    sg.theme('DarkGrey14')
     layout = [ [sg.Text('Welcome to Symple, your personal stock management and sales system.\n',size=(80, 5), key='-INFO-')],
                [sg.Input(do_not_clear=False, size=(50, 1), key='-INPUT-'), sg.Button('Submit!')],
                [sg.InputCombo(commands,size=(35,1), default_value='Program Commands', enable_events=True, key='-COMMANDS-')],
                [sg.Multiline(size=(80,20), visible=True, key='-OUTPUT-')], 
                [sg.Button('EXIT')]
         ]
-    window = sg.Window('SYMPLE, Stock Management and Sales System', layout, alpha_channel=1.666, resizable=True)
+    window = sg.Window('SYMPLE, Stock Management and Sales System', layout, alpha_channel=1.666, resizable=True, element_justification='center', 
+    background_color='#f5f3bb', text_justification='center', font='charter')
     RMAT = Raw_Material({})
     STCK = Stock({})
     SLS = Sales({})
